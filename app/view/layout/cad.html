@@ -1,0 +1,37 @@
+<div class="container mt-5 mb-5">
+    <div class="row row-cols-auto justify-content-center g-5">  
+                
+        <form method="POST" action="index.php?pg=cad&act=cad" enctype="multipart/form-data">
+            <center></center>
+                <h2>Insira os dados do novo usuario</h2></br>
+            </center>
+            <center>
+                <table class='table'>        
+   
+                    <tr>
+                        <th>Nome</th>
+                        <th>Senha</th>
+                    </tr>
+                    <tr>
+                        <th><input type="text" name="nome"></th>
+                        <th><input type="password" name="senha"></th>
+                    </tr>
+                </table>
+                <h5>Selecione o tipo de Usuario</h5>
+                <table class="table">
+                    <tr>
+                        <label>Usuario </label>
+                        <input type="checkbox" name="usuario">
+                    </tr>
+                    <tr>
+                        <label>Administrador </label>
+                        <input type="checkbox" name="adm">
+                    </tr>
+                </table>
+            </center>
+            <center>
+                <button type="submit">Enviar</button>
+            </center>
+        </form>
+    </div>
+</div>

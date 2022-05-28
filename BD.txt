@@ -1,0 +1,30 @@
+CREATE TABLE PUBLIC.tbprodutos(  pdid SERIAL 
+							   , pdnome VARCHAR(255)
+							   , pdpreco VARCHAR(255)
+							   , pdimagem VARCHAR(255)
+							   , pddescricao VARCHAR(255)
+							   , pdpath VARCHAR(255))
+							   
+CREATE TABLE PUBLIC.tblogin( lgid SERIAL 
+						   , lgusuario VARCHAR(255)
+						   , lgsenha VARCHAR(255)
+						   , lgtipo VARCHAR(255))
+						
+CREATE TABLE PUBLIC.tbcarrinho( cridpesssoa SERIAL 
+						      , crnomepessoa VARCHAR(255)
+						      , crproduto VARCHAR(255)
+						      , crquantidade VARCHAR(255)
+							  , crvalor VARCHAR(255))
+							  
+INSERT INTO PUBLIC.tbprodutos (pdnome, pdpreco, pddescricao)
+     VALUES ('Iphone X','3800','Novo'),
+	        ('Iphone 11','4500','Semi-Novo'),
+			('Iphone 12','600','Usado'),
+			('Iphone 13','5000','Tela Quebrada'),
+			('Placa de video RTX3090','12000','Novo')
+			
+			
+INSERT INTO PUBLIC.tb (lgusuario, lgsenha, lgtipo)
+     VALUES ('adm','302010','2'),
+	        ('normal','102030','1')
+			
